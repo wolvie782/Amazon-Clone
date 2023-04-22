@@ -42,9 +42,9 @@ function App() {
       <div className="App">
    
         <Routes>
-          <Route path="/login" element={<Login/>}>
+          <Route path={`${process.env.PUBLIC_URL}/login`} element={<Login/>}>
           </Route>
-          <Route path="/checkout" 
+          <Route path={`${process.env.PUBLIC_URL}/checkout`}
              element={<><Header /> <Checkout /></>} >
                
               
